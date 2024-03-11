@@ -1,0 +1,36 @@
+.SAC_Container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.5rem auto 1rem;
+  width: 30%;
+  border-top: none;
+}
+
+.SAC_SubContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0.5rem auto 1rem;
+  width: 100%;
+}
+
+.SAC_SubContainer span {
+  color: var(--text-footer-color);
+  font-family: var(--font-open-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.57px;
+  line-height: 1.36;
+  text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+  .SAC_Container {
+    border-top: 1.05px solid #007e47;
+    margin: 0 auto 0.5rem;
+    width: 100%;
+  }
+}

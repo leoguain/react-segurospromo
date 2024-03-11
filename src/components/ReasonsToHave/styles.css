@@ -1,0 +1,77 @@
+.ReasonsToHave_Container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto 5rem;
+}
+
+.ReasonsToHave_Title {
+  display: flex;
+  order: -1;
+  flex: 1 0 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.ReasonsToHave_Container h2 {
+  font-family: var(--font-poppins);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.ReasonsToHave_SubLeftContainer {
+  display: flex;
+  order: 0;
+  flex: 0 1 50%;
+  align-items: flex-start;
+  justify-content: center;
+  max-height: 15rem;
+}
+
+.ReasonsToHave_SubRightContainer {
+  display: flex;
+  order: 0;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 50%;
+}
+
+.ReasonsToHave_Button {
+  display: flex;
+  order: 1;
+  flex: 1 0 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+@media screen and (max-width: 480px) {
+  .ReasonsToHave_Container {
+    margin: 3rem auto;
+    max-height: none;
+  }
+  .ReasonsToHave_SubRightContainer {
+    order: -1;
+    flex: 1 1 100%;
+  }
+  .ReasonsToHave_Title {
+    order: 0;
+  }
+  .ReasonsToHave_SubLeftContainer {
+    order: 1;
+    height: auto;
+    flex: 1 1 100%;
+    max-height: none;
+  }
+  .ReasonsToHave_Button {
+    order: 2;
+  }
+  .ReasonsToHave_Container h2 {
+    font-family: var(--font-poppins);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,36 @@
+.Accordion_Item {
+  border-bottom: 1px solid #ccd1d6;
+  max-width: 25rem;
+  padding: 1rem 0 0.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.Accordion_Title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  color: var(--text-main-color);
+  font-family: var(--font-poppins);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.Accordion_Content {
+  text-align: left;
+  color: var(--text-main-color);
+  font-family: var(--font-poppins);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.5rem 0 0;
+  width: 90%;
+}
+
+@media screen and (max-width: 480px) {
+  .Accordion_Title {
+    font-size: 1rem;
+  }
+}

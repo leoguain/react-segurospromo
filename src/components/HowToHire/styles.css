@@ -1,0 +1,116 @@
+.HowToHire_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  width: 90%;
+}
+
+.HowToHire_SubContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.HowToHire_LeftContainer {
+  display: flex;
+  flex: 1;
+}
+
+.HowToHire_RightContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.HowToHire_Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
+.HowToHire_Content h2 {
+  font-family: var(--font-poppins);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.HowToHire_Content ol {
+  list-style-type: none;
+  counter-reset: ordered;
+}
+
+.HowToHire_Content ol li {
+  display: flex;
+  align-items: center;
+  color: var(--text-main-color);
+  font-family: var(--font-poppins);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  padding: 1rem 0;
+}
+
+.HowToHire_Content ol li::before {
+  color: var(--text-second-color);
+  content: counter(ordered) ". ";
+  counter-increment: ordered;
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-left: -3.125rem;
+  margin-top: -0.5rem;
+  padding: 0.3125rem 0.75rem;
+  position: absolute;
+}
+
+.HowToHire_Image {
+  width: 100%;
+}
+
+.HowToHire_RightContainer span {
+  display: flex;
+  color: var(--text-second-color);
+  font-family: var(--font-poppins);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 480px) {
+  .HowToHire_Container {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .HowToHire_RightContainer {
+    padding: 0 1rem;
+  }
+  .HowToHire_Content {
+    width: auto;
+  }
+  .HowToHire_RightContainer h2 {
+    font-size: 1.5rem;
+    width: 85%;
+  }
+  .HowToHire_RightContainer ol li {
+    font-size: 1rem;
+    padding: 1rem 0.75rem;
+  }
+  .HowToHire_Image {
+    margin-bottom: 3rem;
+  }
+  .HowToHire_RightContainer span {
+    padding: 0 0.5rem;
+  }
+}

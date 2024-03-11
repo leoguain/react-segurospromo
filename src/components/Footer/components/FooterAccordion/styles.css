@@ -1,0 +1,15 @@
+.FooterAccordion_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .FooterAccordion_Container {
+    border-top: 1.05px solid #435162;
+    margin: 0 auto 0.5rem;
+    width: 100%;
+  }
+}

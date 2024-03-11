@@ -1,0 +1,16 @@
+.LinksMenu_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem 0 0;
+  width: 100%;
+}
+
+.SocialMediaLinks_Container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

@@ -1,0 +1,28 @@
+.SacButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #387b4c;
+  border-radius: 8px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 0;
+  color: #fff;
+  font-family: var(--font-open-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.57px;
+  line-height: 1.36;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+.SmallFont {
+  font-size: 0.75rem;
+}
+
+.VerticalDisplay {
+  flex-direction: column;
+  gap: 0.5rem;
+}

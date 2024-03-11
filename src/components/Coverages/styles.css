@@ -1,0 +1,48 @@
+.Coverages_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.Coverages_Container h2 {
+  font-family: var(--font-poppins);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.Coverages_Message {
+  display: flex;
+  color: var(--text-main-color);
+  font-family: var(--font-poppins);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.Coverages_SubContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 4rem auto;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .Coverages_Container h2 {
+    font-size: 1.5rem;
+    width: 70%;
+    margin-top: 2rem;
+  }
+  .Coverages_Message {
+    font-size: 1rem;
+    width: 70%;
+  }
+  .Coverages_SubContainer {
+    flex-direction: column;
+    margin: 1rem 1.5rem 3rem;
+    gap: 1rem;
+  }
+}

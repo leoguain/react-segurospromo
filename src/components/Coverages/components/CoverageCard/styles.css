@@ -1,0 +1,73 @@
+.Card_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 8px;
+  padding: 1.5rem;
+  gap: 1rem;
+  box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.15);
+  width: 25%;
+}
+
+.Card_Container span {
+  color: #33794a;
+  font-family: var(--font-poppins);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.Card_Container p {
+  color: #737d86;
+  font-family: var(--font-poppins);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.Card_Container button {
+  background-color: rgba(96, 199, 66, 0.5);
+  border: none;
+  border-radius: 90.9px;
+  padding: 0.511rem 1.25rem;
+  color: #33794a;
+  font-family: var(--font-poppins);
+  font-size: 0.614rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .Card_Container {
+    width: auto;
+  }
+
+  .Card_Container p {
+    overflow: none;
+    display: -webkit-box;
+    -webkit-line-clamp: 10; /* number of lines to show */
+    line-clamp: 10;
+  }
+
+  .Card_Container button {
+    display: none;
+    background-color: rgba(96, 199, 66, 0.5);
+    border: none;
+    border-radius: 90.9px;
+    padding: 0.511rem 1.25rem;
+    color: #33794a;
+    font-family: var(--font-poppins);
+    font-size: 0.614rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: underline;
+  }
+}
