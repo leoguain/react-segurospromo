@@ -8,6 +8,7 @@ export const LinksMenu = () => {
   return (
     <div className="LinksMenu_Container">
       <img src="/assets/segurospromo/logo-black.png" alt="Logo Segurospromo" />
+      {/* Carrega os links externos, a partir do hook socialMedia */}
       <div className="SocialMediaLinks_Container">
         {socialMedia.map(({ id, href, path, alt }) => (
           <a key={id} href={href}>

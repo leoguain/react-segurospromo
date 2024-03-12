@@ -3,4 +3,11 @@
   flex-direction: column;
   width: 100%;
   z-index: 2;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .Accordion {
+    align-items: center;
+  }
 }

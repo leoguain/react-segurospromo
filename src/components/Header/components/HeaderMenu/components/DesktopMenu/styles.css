@@ -1,0 +1,34 @@
+.DesktopMenu_Container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.DesktopMenu_Items {
+  display: flex;
+  gap: 0.625rem;
+}
+.DesktopMenu_Container a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  gap: 0.25rem;
+  transition: border 0.4s;
+}
+
+.ActiveLink {
+  border-color: #ffb31a;
+}
+
+.DesktopMenu_Container a:hover {
+  border-color: #ffb31a;
+}
+
+.DesktopMenu_Container a:active {
+  border-color: #ffb31a;
+}

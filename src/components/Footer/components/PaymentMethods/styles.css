@@ -3,6 +3,7 @@
   flex-direction: column;
   flex: 1;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .PaymentMethods_Container h5 {
@@ -26,6 +27,12 @@
 .PaymentMethods_SubContainer {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.PaymentMethods_ItemContainer {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   align-items: flex-start;
   gap: 0.5rem;
@@ -38,4 +45,26 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .PaymentMethods_Container {
+    order: 2;
+    flex: 1 1 100%;
+  }
+  .PaymentMethods_SubContainer {
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .PaymentMethods_ItemContainer {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .PaymentMethods_SubContainer {
+    flex-direction: column;
+  }
 }

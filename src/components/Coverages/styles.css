@@ -14,20 +14,32 @@
 }
 
 .Coverages_Message {
-  display: flex;
   color: var(--text-main-color);
   font-family: var(--font-poppins);
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5;
 }
+
 .Coverages_SubContainer {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin: 4rem auto;
   gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Coverages_Container h2 {
+    font-size: 1.875rem;
+    width: 70%;
+    margin-top: 2rem;
+  }
+  .Coverages_Message {
+    font-size: 1.125rem;
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 480px) {

@@ -45,6 +45,12 @@
   text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+  .Card_Container {
+    width: 40%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .Card_Container {
     width: auto;
@@ -59,15 +65,5 @@
 
   .Card_Container button {
     display: none;
-    background-color: rgba(96, 199, 66, 0.5);
-    border: none;
-    border-radius: 90.9px;
-    padding: 0.511rem 1.25rem;
-    color: #33794a;
-    font-family: var(--font-poppins);
-    font-size: 0.614rem;
-    font-weight: 700;
-    line-height: 1.5;
-    text-decoration: underline;
   }
 }

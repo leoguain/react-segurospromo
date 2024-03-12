@@ -47,7 +47,7 @@
   margin: 2rem auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .ReasonsToHave_Container {
     margin: 3rem auto;
     max-height: none;
@@ -68,6 +68,15 @@
   .ReasonsToHave_Button {
     order: 2;
   }
+  .ReasonsToHave_Container h2 {
+    font-family: var(--font-poppins);
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .ReasonsToHave_Container h2 {
     font-family: var(--font-poppins);
     font-size: 1.5rem;

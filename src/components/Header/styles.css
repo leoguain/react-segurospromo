@@ -1,0 +1,16 @@
+.Header_Container {
+  background-color: #006e3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+}
+
+@media screen and (max-width: 480px) {
+  .Header_Container {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}

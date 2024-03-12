@@ -1,12 +1,15 @@
 import React from "react";
-import { Topbar } from "./Topbar";
-import { HeaderMenu } from "./HeaderMenu";
+import "./styles.css";
+import { Topbar } from "./components/Topbar";
+import { HeaderMenu } from "./components/HeaderMenu";
 
 export const Header = () => {
   return (
-    <React.Fragment>
+    <header className="Header_Container">
+      {/* Barra Superior - Contatos */}
       <Topbar />
+      {/* Menu do site */}
       <HeaderMenu />
-    </React.Fragment>
+    </header>
   );
 };

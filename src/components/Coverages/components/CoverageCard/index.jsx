@@ -6,9 +6,7 @@ export const CoverageCard = ({ iconSrc, iconAlt, title, description}) => {
     <div className="Card_Container">
       <img src={iconSrc} alt={iconAlt} height="50px" />
       <span>{title}</span>
-      <p>
-        {description}
-      </p>
+      <p>{description}</p>
       <a href="/">
         <button>Saiba Mais</button>
       </a>

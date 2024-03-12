@@ -4,11 +4,13 @@ import "./styles.css";
 export const FooterAccordionItem = ({id, title, content, accordionSelected, setAccordionSelected}) => {
   
   return (
-    <div className="FooterAccordion_Item">
+    <div 
+      className="FooterAccordion_Item"
+      onClick={() => setAccordionSelected(accordionSelected !== id ?id:0)}
+    >
+      {/* Trigger do Accordion */}
       <div 
-        className="FooterAccordion_Title" 
-        onClick={() => setAccordionSelected(accordionSelected !== id ?id:0)}
-      >
+        className="FooterAccordion_Title">
         <div>{title}</div>
         <div className="Title_Icon">
           <img src={`/assets/icons/${accordionSelected ===id ? 
@@ -17,6 +19,7 @@ export const FooterAccordionItem = ({id, title, content, accordionSelected, setA
                     }.png`} alt=""/>
         </div>
       </div>
+      {/* Carrega o content do Item  */}
       {accordionSelected === id && (
         <div className="FooterAccordion_Content">
           {content &&

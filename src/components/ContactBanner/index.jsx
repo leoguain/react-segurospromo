@@ -4,9 +4,11 @@ import "./styles.css";
 export const ContactBanner = ({title, subText, phoneNumber, buttonText, footText}) => {
   return (
     <section className="ContactBanner_Container">
+      {/* Container esquerdo/superior (mob.) - Título  */}
       <div className="ContactBanner_LeftContainer">
         <h2>{title}</h2>
       </div>
+      {/* Container direito/inferior (mob.) - Textos e Botão  */}
       <div className="ContactBanner_RightContainer">
         <div className="ContactBanner_Texts">
           <span className="Message">

@@ -2,12 +2,11 @@ import React from "react";
 import "./styles.css";
 
 export const SacButton = ({text, href, icon, vertical}) => {
-  const defaultClassButton = "SacButton"
+  // Variação de direção do botão (row/column) + verificador de tamanho de texto 
   const variation = String(text).length > 30 ? " VerticalDisplay SmallFont " : " VerticalDisplay "
-  const classButton = vertical ? defaultClassButton + variation : defaultClassButton
 
   return (
-    <a className={classButton} href={href}>
+    <a className={`SacButton ${vertical ? variation : ""}`} href={href}>
       {icon && <img src={icon} alt="" /> }
       {text}
     </a>

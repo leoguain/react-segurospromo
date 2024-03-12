@@ -5,6 +5,7 @@ import { SacButton } from "./components/SacButton";
 export const SAC = () => {
   return (
     <div className="SAC_Container">
+      {/* Div de Central de Vendas  */}
       <div className="SAC_SubContainer">
         <span>CENTRAL DE VENDAS:</span>
         <SacButton 
@@ -18,6 +19,7 @@ export const SAC = () => {
           icon={"/assets/icons/whatsapp.png"} 
         />
       </div>
+      {/* Div de Atendimento Geral */}
       <div className="SAC_SubContainer">
         <span>ATENDIMENTO:</span>
         <SacButton 

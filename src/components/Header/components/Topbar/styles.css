@@ -5,9 +5,16 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  height: 35px;
+  width: 100%;
+  padding: 0.25rem 0;
+}
+
+.Topbar_Container span {
+  color: #fff;
   font-family: var(--font-poppins);
   font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 .Contact {
@@ -17,13 +24,17 @@
 }
 
 .Contact a {
-  color: #ffb31a;
-  font-size: 1rem;
-  line-height: 1.5rem;
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
+.Contact span {
+  color: #ffb31a;
+  font-family: var(--font-poppins);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
   .Topbar_Container {
     display: none;
   }

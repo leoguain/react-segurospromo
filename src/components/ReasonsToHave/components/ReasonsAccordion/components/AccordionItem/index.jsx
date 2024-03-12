@@ -7,6 +7,7 @@ export const AccordionItem = ({id, title, content, accordionSelected, setAccordi
     <div 
       className="Accordion_Item"
       onClick={() => setAccordionSelected(accordionSelected !== id ?id:0)}>
+      {/* Trigger do Accordion */}
       <div className="Accordion_Title">
         <span>{title}</span>
         <div className="Title_Icon">
@@ -16,6 +17,8 @@ export const AccordionItem = ({id, title, content, accordionSelected, setAccordi
                     }.png`} alt=""/>
         </div>
       </div>
+
+      {/* Content do Item */}
       {accordionSelected === id && <div className="Accordion_Content">{content}</div>}
     </div>
   );

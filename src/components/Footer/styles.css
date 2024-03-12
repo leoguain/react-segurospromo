@@ -57,11 +57,18 @@ footer:after {
   text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .Footer_Menus {
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   .BottomBar {
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Footer_Menus {
+    flex-direction: column;
   }
 }

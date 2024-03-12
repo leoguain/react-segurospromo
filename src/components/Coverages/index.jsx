@@ -12,7 +12,9 @@ export const Coverages = ({title, subText}) => {
       <h2>{title}</h2>
       <span className="Coverages_Message">{subText}</span>
       <div className="Coverages_SubContainer">
+      {/* Carrega Coberturas Disponíveis, via hook useCoverages */}
       {coverages.map(({ id, title, description, logoPath, logoAlt }) => (
+        //Card de Cobertura
         <CoverageCard 
         key={id}
         iconSrc={logoPath} 
@@ -21,6 +23,7 @@ export const Coverages = ({title, subText}) => {
         description={description} />
       ))}
       </div>
+      {/* Botão padrão - Faça sua cotação */}
       <QuoteButton />
     </section>
   );

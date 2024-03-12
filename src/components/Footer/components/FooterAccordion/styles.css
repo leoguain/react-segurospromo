@@ -6,6 +6,11 @@
   flex: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .FooterAccordion_Container {
+  }
+}
+
 @media screen and (max-width: 480px) {
   .FooterAccordion_Container {
     border-top: 1.05px solid #435162;

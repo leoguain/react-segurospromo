@@ -92,7 +92,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .ContactBanner_Container {
     display: flex;
     flex-direction: column;
@@ -109,7 +109,7 @@
     height: auto;
   }
   .ContactBanner_LeftContainer h2 {
-    font-size: 1.5rem;
+    font-size: 1.875rem;
     width: 90%;
   }
   .ContactBanner_RightContainer {
@@ -126,6 +126,27 @@
   }
   .Message {
     color: #737d86;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    width: 90%;
+  }
+
+  .ContactBanner_Button {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    padding: 0.25rem 0 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ContactBanner_LeftContainer h2 {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  .Message {
+    color: #737d86;
     font-size: 0.75rem;
     font-weight: 400;
     text-align: center;
@@ -134,12 +155,6 @@
   .PhoneNumber {
     font-size: 1.25rem;
     gap: 0.5rem;
-  }
-  .ContactBanner_Button {
-    display: flex;
-    flex-direction: column-reverse;
-    height: 100%;
-    padding: 0.25rem 0 2.5rem;
   }
   .FootNote {
     font-size: 0.625rem;

@@ -85,10 +85,7 @@
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 1024px) {
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .HowToHire_Container {
     margin: 0 auto;
     width: 100%;
@@ -100,6 +97,22 @@
     width: auto;
   }
   .HowToHire_RightContainer h2 {
+    font-size: 1.875rem;
+    width: 50%;
+  }
+  .HowToHire_Image {
+    margin-bottom: 3rem;
+  }
+  .HowToHire_RightContainer span {
+    width: 75%;
+  }
+  .HowToHire_Image {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .HowToHire_RightContainer h2 {
     font-size: 1.5rem;
     width: 85%;
   }
@@ -107,10 +120,11 @@
     font-size: 1rem;
     padding: 1rem 0.75rem;
   }
-  .HowToHire_Image {
-    margin-bottom: 3rem;
-  }
   .HowToHire_RightContainer span {
     padding: 0 0.5rem;
+    width: 95%;
+  }
+  .HowToHire_Image {
+    width: 100%;
   }
 }

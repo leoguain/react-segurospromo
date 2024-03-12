@@ -29,6 +29,22 @@
   width: 90%;
 }
 
+@media screen and (max-width: 768px) {
+  .Accordion_Title {
+    font-size: 1.125rem;
+  }
+  .Accordion_Content {
+    text-align: left;
+    color: var(--text-main-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.5rem 0 0;
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .Accordion_Title {
     font-size: 1rem;

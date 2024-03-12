@@ -9,9 +9,17 @@ export const FooterAccordion = () => {
 
   return (
     <div className="FooterAccordion_Container">
+      {/* Carrega os dados para montar o Accordion */}
       {footerAccordionData  ? (
         footerAccordionData.map(({ id, title, content }) => (
-          <FooterAccordionItem key={id} id={id} title={title} content={content} accordionSelected={accordionSelected} setAccordionSelected={setAccordionSelected}/>
+          <FooterAccordionItem 
+            key={id} 
+            id={id} 
+            title={title} 
+            content={content} 
+            accordionSelected={accordionSelected} 
+            setAccordionSelected={setAccordionSelected}
+          />
         ))
       ) : (
         <div>Loading...</div>

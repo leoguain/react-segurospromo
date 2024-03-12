@@ -6,8 +6,11 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <div className="App">
+      {/* Componente Header da página */}
       <Header />
+      {/* Componente Main da página */}
       <LandingPage />
+      {/* Componente Footer da página */}
       <Footer />
     </div>
   );
