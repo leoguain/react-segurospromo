@@ -1,3 +1,23 @@
+Notas do criador: ------------------------------------------
+Landing Page de Seguros de Vida da Segurospromo
+
+A aplicação foi totalmente desenvolvida em React, sem nenhuma lib de terceiros.
+
+Foi criado um componente para cada seção da página (além de Header e Footer).
+Todos os componentes estão divididos em pastas, contendo sempre o arquivo index.jsx e um styles.css, próprio do componente.
+Alguns componentes possuem sub-componentes que seguem a mesma lógica. Alguns componentes utilizam hooks (locais ou globais).
+
+Foi criado o contexto ScreenWidthContext, que poderá ser visto em alguns componentes eventualmente.
+Esse context servirá na responsividade e variação de alguns componentes.
+
+Além do padrão Desktop, há responsividade para aparelhos até 480px e até 768px.
+
+Para executar a aplicação é só utilizar o comando padrão: npm start
+
+---
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
