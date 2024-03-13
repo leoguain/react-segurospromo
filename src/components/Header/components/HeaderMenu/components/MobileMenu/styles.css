@@ -27,21 +27,20 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  width: 100;
   position: absolute;
-  right: 0;
   gap: 1rem;
-  padding: 1rem;
+  padding: 2rem 1rem;
   z-index: -1;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  top: -50vh;
-  transition: top 1s;
+  top: 2rem;
+  right: -50vw;
+  width: max-content;
+  transition: right 0.5s;
 }
 
 .ShowMenu {
-  top: 100%;
-  z-index: -1;
+  right: 0;
 }
 
 .MobileMenu_Content a {

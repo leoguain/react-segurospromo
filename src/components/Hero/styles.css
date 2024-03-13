@@ -9,15 +9,19 @@
   width: auto;
 }
 
+.Hero_SubContainer {
+  margin: 0 auto;
+  height: 100%;
+  width: max-content;
+}
+
 .Hero_TopContainer,
 .Hero_BottomContainer {
   display: flex;
-  flex: 1;
   flex-direction: column;
-  gap: 3rem;
   align-items: flex-start;
   justify-content: center;
-  margin: 0 13.25rem;
+  gap: 2rem;
   height: 50%;
 }
 
@@ -27,7 +31,7 @@
   font-size: 3rem;
   line-height: 1.25;
   text-align: left;
-  width: 60%;
+  width: 70%;
 }
 
 .Hero_BottomContainer span {
@@ -41,41 +45,33 @@
 
 @media screen and (max-width: 768px) {
   .Hero_Container {
-    background-image: url("/public/assets/bkgds/hero.png");
+    background-image: linear-gradient(transparent 70%, #fff),
+      url("/public/assets/bkgds/hero.png");
     background-position-x: 55%;
     background-position-y: 90%;
     background-size: auto;
-    background-repeat: no repeat;
-    width: auto;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
   }
   .Hero_TopContainer {
-    gap: 0;
-    align-items: center;
-    margin: 0;
     height: auto;
-    flex: none;
+    padding: 3rem 0 2rem;
   }
   .Hero_BottomContainer {
-    background-image: linear-gradient(transparent 80%, #fff);
     gap: 17rem;
-    align-items: center;
     justify-content: space-between;
-    margin: 1rem 0 0;
-    height: 100%;
+    align-items: center;
+    padding: 1rem 0 0;
+    height: auto;
     width: 100%;
   }
   .Hero_TopContainer h1 {
     font-size: 2.0625rem;
     line-height: 1.5;
-    width: 75%;
+    width: 70%;
   }
   .Hero_BottomContainer span {
     font-size: 1rem;
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -83,15 +79,16 @@
   .Hero_Container {
     background-position-y: 100%;
   }
-  .Hero_TopContainer {
-    gap: 0;
-    align-items: center;
+  .Hero_SubContainer {
     margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .Hero_TopContainer {
     height: auto;
-    flex: none;
+    align-items: center;
   }
   .Hero_BottomContainer {
-    background-image: linear-gradient(transparent 80%, #fff);
     gap: 17rem;
     align-items: center;
     justify-content: space-between;
@@ -102,10 +99,10 @@
   .Hero_TopContainer h1 {
     font-size: 2.0625rem;
     line-height: 1.5;
-    width: 75%;
+    width: 85%;
   }
   .Hero_BottomContainer span {
     font-size: 1rem;
-    width: 90%;
+    width: 85%;
   }
 }

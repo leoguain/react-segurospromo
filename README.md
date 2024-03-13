@@ -1,7 +1,7 @@
 Notas do criador: ------------------------------------------
 Landing Page de Seguros de Vida da Segurospromo
 
-A aplicação foi totalmente desenvolvida em React, sem nenhuma lib de terceiros.
+A aplicação foi totalmente desenvolvida em React, sem nenhuma lib de terceiros. Preferi por não utilizar Typescript, e deixar a aplicação o mais "pura" possível.
 
 Foi criado um componente para cada seção da página (além de Header e Footer).
 Todos os componentes estão divididos em pastas, contendo sempre o arquivo index.jsx e um styles.css, próprio do componente.

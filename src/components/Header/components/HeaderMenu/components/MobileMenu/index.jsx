@@ -1,22 +1,40 @@
-import React, {useState} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import "./styles.css";
 import { useMenuLinks } from "../../../../hooks/useMenuLinks"
 
 export const MobileMenu = () => {
   const { menuLinks } = useMenuLinks();
   const [menuOpen, setMenuOpen] = useState(false);
+  const mobileMenuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+        setMenuOpen(false); // Close accordion if clicked outside
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
   return (
     <div 
       className="MobileMenu_Container"
-      onClick={() => setMenuOpen(!menuOpen)}
+      ref={mobileMenuRef}
     >
       {/* Trigger do Menu Mobile */}
-      <div className="MobileMenu_Button">
+      <div 
+        className="MobileMenu_Button" 
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
         Menu 
         <img src={`/assets/icons/${menuOpen ? 
-                      "caret-up" : 
-                      "caret-down"
+                      "close" : 
+                      "burger"
                     }.png`} alt=""/>
       </div>
         {/* Container dos Links do Menu Mobile */}

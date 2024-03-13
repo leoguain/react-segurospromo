@@ -5,6 +5,9 @@
   align-items: center;
   width: 100%;
   z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 @media screen and (max-width: 480px) {
