@@ -11,13 +11,13 @@ export const HowToHire = () => {
       <div className="HowToHire_SubContainer">
         {/* Container esquerdo, visível apenas no modo desktop */}
         {!mobileScreen && 
-          <div className="HowToHire_LeftContainer">
+          <figure className="HowToHire_LeftContainer">
             <img
               src="/assets/objects/notebook-cellphone.png"
               alt="Notebook e celular"
               className="HowToHire_Image"
             />
-          </div>
+          </figure>
         }
         {/* Container direito */}
         <div className="HowToHire_RightContainer" >

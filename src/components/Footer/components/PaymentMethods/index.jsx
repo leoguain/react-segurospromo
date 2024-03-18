@@ -11,7 +11,6 @@ export const PaymentMethods = () => {
     <div className="PaymentMethods_Container">
       <h5>FORMAS DE PAGAMENTO:</h5>
       <div className="PaymentMethods_SubContainer">
-
         {/* Componente de opção de pagamento Crédito */}
         <div className="PaymentMethods_ItemContainer">
           <span>Crédito em até 12 vezes</span>
